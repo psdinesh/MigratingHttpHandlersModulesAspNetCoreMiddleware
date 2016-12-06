@@ -32,7 +32,7 @@ namespace CustomMiddlewareForHttpHandlersModules
 
             //For Session
             app.UseSession();
-            app.UseSessionMiddleware();
+            //app.UseSessionMiddleware();
 
             app.Use(async (context, next) => {
                 context.Session.SetString("mySessionValue", "test");
